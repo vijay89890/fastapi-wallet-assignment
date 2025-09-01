@@ -10,7 +10,8 @@ A simple wallet management API built using **FastAPI**.
 
 git clone https://github.com/your-username/fastapi-wallet-assignment.git
 cd fastapi-wallet-assignment
-2. Create Virtual Environment
+
+### 2. Create Virtual Environment
 bash
 Copy code
 python -m venv venv
@@ -26,11 +27,13 @@ Windows
 bash
 Copy code
 venv\Scripts\activate
-3. Install Dependencies
+
+### 3. Install Dependencies
 bash
 Copy code
 pip install -r requirements.txt
-4. Run the Application
+
+### 4. Run the Application
 bash
 Copy code
 uvicorn main:app --reload
@@ -61,20 +64,7 @@ Uvicorn
 
 Swagger / ReDoc for API docs
 
-vbnet
-Copy code
-
-✅ This way:
-- Only actual code (like commands) is inside small code blocks.  
-- Steps (`2, 3, 4...`) are shown as headings, not inside one giant gray box.  
-- Looks professional when viewed on GitHub.  
-
-Do you want me to rewrite your **current README.md file** in this exact format so you can just copy-paste?
 
 
 
 
-
-
-
-Ask ChatGPT
