@@ -1,71 +1,80 @@
-Here’s a clean template tailored to your Wallet API Assignment:
-
 # 💰 FastAPI Wallet Assignment
 
-This project is a simple **Wallet Management API** built using **FastAPI** and **SQLAlchemy**.  
-It allows you to:  
-- List all users and their wallet balances  
-- Update (credit/debit) a user’s wallet  
-- Fetch all transactions for a specific user  
-
-All APIs are automatically documented with **Swagger UI** (`/docs`).
+A simple wallet management API built using **FastAPI**.
 
 ---
 
-## 🚀 Features
-1. **List Users API** – Fetch all users with details (name, email, phone, wallet balance).  
-2. **Update Wallet API** – Add or update wallet balance for a user.  
-3. **Fetch Transactions API** – Fetch all wallet transactions for a given user.  
+## 🚀 Setup Instructions
 
----
-
-## 🛠 Tech Stack
-- [FastAPI](https://fastapi.tiangolo.com/) – Framework  
-- [SQLAlchemy](https://www.sqlalchemy.org/) – ORM for database  
-- [SQLite](https://www.sqlite.org/) – Database  
-- [Uvicorn](https://www.uvicorn.org/) – ASGI server  
-
----
-
-## ⚙️ Setup Instructions
-
-### 1️⃣ Clone Repository
+### 1. Clone Repository
 ```bash
 git clone https://github.com/your-username/fastapi-wallet-assignment.git
 cd fastapi-wallet-assignment
-
-2️⃣ Create Virtual Environment
+2. Create Virtual Environment
+bash
+Copy code
 python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
+Activate it:
 
-3️⃣ Install Dependencies
+Mac/Linux
+
+bash
+Copy code
+source venv/bin/activate
+Windows
+
+bash
+Copy code
+venv\Scripts\activate
+3. Install Dependencies
+bash
+Copy code
 pip install -r requirements.txt
-
-4️⃣ Run the Application
+4. Run the Application
+bash
+Copy code
 uvicorn main:app --reload
+🌐 Access in Browser
+Swagger UI → http://127.0.0.1:8000/docs
 
-
-Now open in browser:
-
-Swagger UI: http://127.0.0.1:8000/docs
-
-ReDoc: http://127.0.0.1:8000/redoc
+ReDoc → http://127.0.0.1:8000/redoc
 
 📌 API Endpoints
 👉 List Users
-
 GET /users
+Fetch all users with wallet balance.
 
 👉 Update Wallet
-
-POST /users/{user_id}/wallet
-
-{
-  "amount": 100.5,
-  "type": "credit"   // or "debit"
-}
+POST /wallet/update
+Add or update amount in user’s wallet.
 
 👉 Fetch Transactions
+GET /transactions/{user_id}
+Fetch all transactions for a specific user.
 
-GET /users/{user_id}/transactions
+✨ Tech Stack
+FastAPI
+
+SQLite (SQLAlchemy ORM)
+
+Uvicorn
+
+Swagger / ReDoc for API docs
+
+vbnet
+Copy code
+
+✅ This way:
+- Only actual code (like commands) is inside small code blocks.  
+- Steps (`2, 3, 4...`) are shown as headings, not inside one giant gray box.  
+- Looks professional when viewed on GitHub.  
+
+Do you want me to rewrite your **current README.md file** in this exact format so you can just copy-paste?
+
+
+
+
+
+
+
+Ask ChatGPT
