@@ -7,7 +7,7 @@ A simple wallet management API built using **FastAPI**.
 ## 🚀 Setup Instructions
 
 ### 1. Clone Repository
-```bash
+
 git clone https://github.com/your-username/fastapi-wallet-assignment.git
 cd fastapi-wallet-assignment
 2. Create Virtual Environment
